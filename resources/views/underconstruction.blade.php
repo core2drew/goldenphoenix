@@ -10,7 +10,7 @@
    			<img class="ui image tiny" src="{{asset('images/Logo.png')}}">
    			<span id="CompanyName">
 				<h1 class="ui header">Golden Phoenix</h1>
-				<label class="ui label">Internation Trading Corp.</label>
+				<label class="ui label">International Trading Corp.</label>
 			</span>
    		</div>
    		<div id="MessageContainer">
