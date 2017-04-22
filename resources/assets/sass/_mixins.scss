@@ -1,0 +1,133 @@
+@mixin flexbox($important:false)
+{
+	@if $important == true {
+		display: flex !important;
+		display: -webkit-box !important;
+		//display: -moz-box !important;
+		display: -ms-flexbox !important;
+		display: -webkit-flex !important;
+	}
+	@else {
+		display: flex;
+		display: -webkit-box;
+		//display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+}
+
+
+@mixin inline-flexbox($important:false)
+{
+	@if $important == true {
+		display: inline-flex !important;
+		display: -webkit-inline-box !important;  
+		//display: -moz-inline-box !important;         
+		display: -ms-inline-flexbox !important;     
+		display: -webkit-inline-flex !important;
+	}
+	@else {
+		display: inline-flex;
+		display: -webkit-inline-box;  
+		//display: -moz-inline-box;         
+		display: -ms-inline-flexbox;     
+		display: -webkit-inline-flex;
+	}
+}
+
+@mixin flexgrow($grow) {
+	flex-grow: $grow;
+	-moz-flex-grow: $grow;
+	-webkit-flex-grow: $grow;
+}
+
+@mixin flexwrap($wrap) {
+	flex-wrap: $wrap;
+	-moz-flex-wrap: $wrap;
+	-webkit-flex-wrap: $wrap;
+}
+
+@mixin align-self($pos)
+{
+	align-self: $pos;
+	-moz-align-self: $pos;
+	-webkit-align-self: $pos;
+}
+
+@mixin align-items($pos)
+{
+	align-items: $pos;
+	-moz-align-items: $pos;
+	-webkit-align-items: $pos;
+}
+
+@mixin justify-content($pos)
+{
+	justify-content:$pos;
+	-moz-justify-content:$pos;
+	-webkit-justify-content:$pos;
+}
+
+
+@mixin flex-direction($direction, $important:false) 
+{
+	@if $important == true {
+		flex-direction: $direction !important;
+		-ms-flex-direction: $direction !important;
+		-moz-flex-direction: $direction !important;
+		-webkit-flex-direction: $direction !important;
+	}
+	@else {
+		flex-direction: $direction;
+		-ms-flex-direction: $direction;
+		-moz-flex-direction: $direction;
+		-webkit-flex-direction: $direction;
+	}
+}
+
+@mixin transition($property, $important:false)
+{
+
+	@if $important == true {
+		transition: $property !important;
+		-moz-transition: $property !important;
+		-webkit-transition: $property !important;
+	}
+	@else {
+		transition: $property;
+		-moz-transition: $property;
+		-webkit-transition: $property;
+	}
+}
+
+@mixin transform($translate)
+{
+	transform:$translate;
+	-moz-transform:$translate;
+	-webkit-transform:$translate;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin placeholderColor($color)
+{
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+		color: $color;
+	}
+
+	&:-moz-placeholder {  /* Firefox 19+ */
+		color: $color;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+}
