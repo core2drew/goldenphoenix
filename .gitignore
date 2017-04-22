@@ -12,3 +12,4 @@ npm-debug.log
 public/vendors
 public/css/
 public/js/
+public/mix-manifest.json
