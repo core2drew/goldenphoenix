@@ -26,6 +26,7 @@
   "author": "drew calupe",
   "license": "MIT",
   "dependencies": {
+    "angular": "^1.6.4",
     "semantic-ui": "2.2.10"
   }
 }

@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('underconstruction');
+	$params['name'] = 'Drew';
+    return view('underconstruction',$params);
 });

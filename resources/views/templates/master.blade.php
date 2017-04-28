@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="GoldenPhoenixApp">
 <head>
 	<title>Golden Phoenix</title>
 	<link rel="stylesheet" href="{{ mix('css/main.css') }}">
@@ -13,6 +13,7 @@
 			@yield("body")
 		</div>
 	</div>
+	<script type="text/javascript" src="{{ mix('js/bundle.js') }}"></script>
 	@stack('scripts')
 </body>
 </html>

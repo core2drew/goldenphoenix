@@ -5,7 +5,7 @@
 @endpush
 
 @section('body')
-   	<div class="ui fluid container" id="UnderConstruction">
+   	<div class="ui fluid container" id="UnderConstruction" ng-controller="UnderController as ctrl" ng-init="ctrl.name='{{$name}}'; ctrl.init()">
    		<div id="Logo">
    			<img class="ui image tiny" src="{{asset('images/Logo.png')}}">
    			<span id="CompanyName">
@@ -29,3 +29,7 @@
    		</div>
    	</div>
 @endsection
+
+@push('scripts')
+   <script type="text/javascript" src="{{ mix('js/controllers/underController.js') }}"></script>
+@endpush
