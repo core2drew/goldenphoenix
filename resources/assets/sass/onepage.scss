@@ -1,0 +1,197 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@import 'components/header.scss';
+
+#Main {
+
+	> .ui.container.fluid.section > .ui.container {
+		padding: 60px 0;
+		font-size:1rem;
+		text-align: center;
+	}
+
+	> .ui.container.fluid.section > .ui.container > .ui.header {
+		font-size: 3.5em;
+	}
+	
+	> .ui.container.fluid.section > .ui.container > .text {
+		font-size: 1.5em;
+		padding: 0 40px;
+	}
+
+	> #Banner {
+		position: relative;
+		background-color:$secondary-color;
+		overflow: hidden;
+		height:100vh;
+	}
+
+	> #Banner > #StripeBG {
+		@include transform(skewY(-16.5deg));
+		box-shadow: 0px -2px 10px 0 #000;
+		height:100vh;
+		width: 100vw;
+		background-color:$primary-color;
+		position: absolute;
+		top: -200px;
+	}
+
+	> #Banner > #Tagline {
+		position:absolute;
+		z-index:1;
+		top: 220px;
+		left: 60px;
+	}
+
+	> #Banner > #Tagline > .ui.header {
+		font-size: 3.5em;
+		font-weight:300;
+		color:#151515;
+	}
+
+	> #Banner > #Tagline > .ui.header > .emphasize {
+		font-weight:800;
+		font-style:italic;
+	}
+
+	> #AboutUs {
+		background-color:#f9f9f9;
+	}
+
+	> #AboutUs > .ui.container > .ui.header,
+	> #AboutUs > .ui.container > .text {
+		color:#353535;
+	}
+
+	> #WhatWeDo {
+		
+		background-color:$primary-color;
+	}
+
+	> #WhatWeDo > .ui.container > .ui.header,
+	> #WhatWeDo > .ui.container > .text {
+		color:#000;
+	}
+
+	> #WhatWeDo > .ui.container > #Mission {
+		margin-bottom: 40px;
+	}
+
+	> #WhatWeDo > .ui.container > #MissionVision > .row > #Mission > .text,
+	> #WhatWeDo > .ui.container > #MissionVision > .row > #Vision > .text{
+		font-size:1.5em;
+		padding: 0 20px;
+	}
+
+	> #Products {
+		background-color:#f9f9f9;
+	}
+
+	> #Products > .ui.container > .ui.header,
+	> #Products > .ui.container > .text {
+		color:#353535;
+	}
+	
+	> #Products > .ui.container > .text {
+		margin-bottom:60px;
+	}
+
+	> #Products > .ui.container > #Category > .row > .column > .text {
+		font-size: 1.1em;
+	}
+
+	> #Partners > .ui.container > .ui.header {
+		color:#353535;
+	}
+
+	> #Partners > .ui.container > .ui.grid > .row > .three > .ui.image{
+		width: 60%;
+		margin: auto;
+	}
+
+	> #Partners > .ui.container > .ui.grid > .row > .thirteen {
+		@include inline-flexbox();
+		@include align-items(center);
+	}
+
+	> #Partners > .ui.container > .ui.grid > .row > .column > .text {
+		font-size: 1.2em;
+		text-align: left;
+	}
+
+	> #GetInTouch {
+		background-color:$primary-color;
+	}
+
+	> #GetInTouch > .ui.container {
+		padding:15px 0;
+	}
+
+	> #GetInTouch > .ui.container > .ui.header {
+		margin:0;
+
+	}
+
+	> #GetInTouch > #ContactDetails {
+		background-color:$secondary-color;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail{
+		padding: 25px;
+		text-align: left;
+		background-color:rgba(255,255,255,0.1);
+	}
+
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.input {
+		margin-bottom: 13px;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic {
+		border: 2px solid #fff;
+		color: #fff !important;
+		box-shadow:none;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:hover {
+		background-color:transparent !important;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails {
+		text-align:left;
+		color:$dark-primary-font-color;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .ui.header {
+		text-transform:uppercase;
+		margin-bottom:0;
+		color:inherit;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .text {
+		font-size: 1.2em;
+		font-style: italic;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details {
+		@include flexbox();
+		@include align-items(center);
+		margin-bottom: 22px;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details > .icon {
+		font-size: 2em;
+		height:initial;
+		margin-right:10px;
+	}
+
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details > .text {
+		font-size:1.2em;
+	}
+	
+	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > #Footer {
+		text-align: right;
+		position: relative;
+		top: 20px;
+	}
+}

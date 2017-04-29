@@ -13,5 +13,5 @@
 
 Route::get('/', function () {
 	$params['name'] = 'Drew';
-    return view('underconstruction',$params);
+    return view('onepage.index',$params);
 });
