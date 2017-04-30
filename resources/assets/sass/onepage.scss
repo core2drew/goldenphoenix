@@ -4,19 +4,21 @@
 
 #Main {
 
-	> .ui.container.fluid.section > .ui.container {
-		padding: 60px 0;
-		font-size:1rem;
-		text-align: center;
-	}
+	> .ui.container.fluid.section {
+		> .ui.container {
+			padding: 60px 0;
+			font-size:1em;
+			text-align: center;
+		}
 
-	> .ui.container.fluid.section > .ui.container > .ui.header {
-		font-size: 3.5em;
-	}
-	
-	> .ui.container.fluid.section > .ui.container > .text {
-		font-size: 1.5em;
-		padding: 0 40px;
+		> .ui.container > .ui.header {
+			font-size: 3.5em;
+		}
+
+		> .ui.container > .text {
+			font-size: 1.5em;
+			padding: 0 40px;
+		}
 	}
 
 	> #Banner {
@@ -24,174 +26,400 @@
 		background-color:$secondary-color;
 		overflow: hidden;
 		height:100vh;
-	}
 
-	> #Banner > #StripeBG {
-		@include transform(skewY(-16.5deg));
-		box-shadow: 0px -2px 10px 0 #000;
-		height:100vh;
-		width: 100vw;
-		background-color:$primary-color;
-		position: absolute;
-		top: -200px;
-	}
+		> #StripeBG {
+			@include transform(skewY(-16.5deg));
+			box-shadow: 0px -2px 10px 0 #000;
+			height:100vh;
+			width: 100vw;
+			background-color:$primary-color;
+			position: absolute;
+			top: -200px;
+		}
 
-	> #Banner > #Tagline {
-		position:absolute;
-		z-index:1;
-		top: 220px;
-		left: 60px;
-	}
+		> #Tagline {
+			position:absolute;
+			z-index:1;
+			width: 39.28571428571429em;
+			top: 180px;
+			left: 60px;
+		}
 
-	> #Banner > #Tagline > .ui.header {
-		font-size: 3.5em;
-		font-weight:300;
-		color:#151515;
-	}
+		> #Tagline > .ui.header {
+			font-size: 3.5em;
+			font-weight:300;
+		}
 
-	> #Banner > #Tagline > .ui.header > .emphasize {
-		font-weight:800;
-		font-style:italic;
+		> #Tagline > .ui.header > .emphasize {
+			font-weight:800;
+			font-style:italic;
+		}
 	}
 
 	> #AboutUs {
 		background-color:#f9f9f9;
-	}
 
-	> #AboutUs > .ui.container > .ui.header,
-	> #AboutUs > .ui.container > .text {
-		color:#353535;
+		> .ui.container > .ui.header,
+		> .ui.container > .text {
+			color:#353535;
+		}
 	}
 
 	> #WhatWeDo {
-		
 		background-color:$primary-color;
-	}
 
-	> #WhatWeDo > .ui.container > .ui.header,
-	> #WhatWeDo > .ui.container > .text {
-		color:#000;
-	}
+		> .ui.container > .ui.header,
+		> .ui.container > .text {
+			color:#000;
+		}
 
-	> #WhatWeDo > .ui.container > #Mission {
-		margin-bottom: 40px;
-	}
+		> .ui.container > #Mission {
+			margin-bottom: 40px;
+		}
 
-	> #WhatWeDo > .ui.container > #MissionVision > .row > #Mission > .text,
-	> #WhatWeDo > .ui.container > #MissionVision > .row > #Vision > .text{
-		font-size:1.5em;
-		padding: 0 20px;
+		> .ui.container > #MissionVision > .row > #Mission > .text,
+		> .ui.container > #MissionVision > .row > #Vision > .text{
+			font-size:1.5em;
+			padding: 0 20px;
+		}
+
+		> .ui.container > #MissionVision > .row > #Mission > .ui.image,
+		> .ui.container > #MissionVision > .row > #Vision > .ui.image {
+			width: 6.785714285714286em;
+			min-height: 6.785714285714286em;
+		}
 	}
 
 	> #Products {
 		background-color:#f9f9f9;
-	}
 
-	> #Products > .ui.container > .ui.header,
-	> #Products > .ui.container > .text {
-		color:#353535;
+		> .ui.container > .ui.header,
+		> .ui.container > .text {
+			color:#353535;
+		}
+
+		> .ui.container > .text {
+			margin-bottom: 2.86em;
+		}
+
+		> .ui.container > #Category > .row > .column > .text {
+			font-size: 1.28em;
+		}
+
+		> .ui.container > #Category > .row > .column > .ui.image {
+			width:10.42857142857143em;
+			min-height:7.285714285714286em;
+		}
 	}
 	
-	> #Products > .ui.container > .text {
-		margin-bottom:60px;
-	}
+	> #Partners {
+		> .ui.container > .ui.header {
+			color:#353535;
+		}
 
-	> #Products > .ui.container > #Category > .row > .column > .text {
-		font-size: 1.1em;
-	}
+		> .ui.container > .ui.grid > .row > .column {
+			@include inline-flexbox();
+			@include align-items(center);
+		}
 
-	> #Partners > .ui.container > .ui.header {
-		color:#353535;
-	}
+		> .ui.container > .ui.grid > .row > .three > .ui.image{
+			width: 60%;
+			margin: auto;
+		}
 
-	> #Partners > .ui.container > .ui.grid > .row > .three > .ui.image{
-		width: 60%;
-		margin: auto;
-	}
-
-	> #Partners > .ui.container > .ui.grid > .row > .thirteen {
-		@include inline-flexbox();
-		@include align-items(center);
-	}
-
-	> #Partners > .ui.container > .ui.grid > .row > .column > .text {
-		font-size: 1.2em;
-		text-align: left;
+		> .ui.container > .ui.grid > .row > .column > .text {
+			font-size: 1.28em;
+			text-align: left;
+		}
 	}
 
 	> #GetInTouch {
 		background-color:$primary-color;
+
+		> .ui.container {
+			padding:15px 0;
+		}
+
+		> .ui.container > .ui.header {
+			margin:0;
+		}
+
+		> #ContactDetails {
+			background-color:$secondary-color;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail{
+			padding: 25px;
+			text-align: left;
+			background-color:rgba(255,255,255,0.1);
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.input {
+			margin-bottom: 13px;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic {
+			border: 2px solid #fff;
+			color: #fff !important;
+			box-shadow:none;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:hover {
+			background-color:transparent !important;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails {
+			text-align:left;
+			color:$dark-primary-font-color;
+			height: 100%;
+			position: relative;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .ui.header {
+			text-transform:uppercase;
+			margin-bottom:0;
+			color:inherit;
+			font-size: 1.8em;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .text {
+			font-size: 1.2em;
+			font-style: italic;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details {
+			@include flexbox();
+			@include align-items(center);
+			margin-bottom: 1.428571428571429em;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details > .icon {
+			font-size: 2em;
+			height:initial;
+			margin-right:10px;
+		}
+		
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details > .text {
+			font-size:1.2em;
+		}
+
+		> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > #Footer {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
 	}
+}
 
-	> #GetInTouch > .ui.container {
-		padding:15px 0;
+
+@media only screen and (max-width:1199px){
+	#Main {
+
+		> .ui.container.fluid.section {
+			> .ui.container {
+				font-size: 0.8em;
+				text-align: center;
+			}
+		}
+
+		> #Banner {
+
+			> #StripeBG {
+				@include transform(skewY(-18.5deg));
+			}
+
+			> #Tagline > .ui.header {
+				font-size: 3em;
+			}
+		}
+
+		> #Products {
+			> .ui.container > #Category > .row{
+				@include justify-content(center);
+				@include align-items(center);
+			}
+
+			> .ui.container > #Category > .row > .column {
+				width: 33.33333333% !important;
+			}
+
+			> .ui.container > #Category > .row > .column:nth-child(-n + 3) {
+				margin-bottom: 16px;
+			}
+		}
 	}
+}
 
-	> #GetInTouch > .ui.container > .ui.header {
-		margin:0;
+@media only screen and (max-width:990px){
+	#Main {
+		> .ui.container.fluid.section {
+			> .ui.container {
+				padding: 30px 0;
+				font-size: 0.7em;
+				text-align: center;
+			}
 
+			> .ui.container > .text{
+				padding: 0 30px;
+			}
+		}
+
+		> #Banner {
+			> #StripeBG {
+				top: -166px;
+			}
+		}
+
+		> #GetInTouch {
+			> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails {
+				font-size:1.1em;
+			}
+
+			> #ContactDetails > .ui.grid > .row > .column > #SendMail{
+				padding: 15px;
+			}
+		}
 	}
+}
 
-	> #GetInTouch > #ContactDetails {
-		background-color:$secondary-color;
+@media only screen and (max-width:767px) {
+	#Main {
+		> .ui.container.fluid.section {
+			margin:0 !important;
+
+			> .ui.container {
+				font-size: 0.75em;
+			}
+
+			> .ui.container > .text {
+				padding: 0px;
+			}
+		}
+		
+		> #Banner {
+			> #StripeBG {
+				top: -130px;
+			}
+
+			> #Tagline {
+				left: 45px;
+			}
+		}
+
+		> #Products {
+			> .ui.container > #Category > .row > .column {
+				width: 50% !important;
+			}
+
+			> .ui.container > #Category > .row > .column:nth-child(-n + 4) {
+				margin-bottom: 25px;
+			}
+		}
+
+		> #Partners {
+			> .ui.container > .ui.grid > .row {
+				@include flex-direction(column);
+				@include align-items(center);
+			}
+
+			> .ui.container > .ui.grid > .row > .column > .ui.image {
+				margin-bottom:10px;
+			}
+
+			> .ui.container > .ui.grid > .row > .column > .text {
+				font-size:1.4em;
+				text-align:center;
+			}
+		}
+
+		> #GetInTouch {
+			> .ui.fluid.container {
+				margin:0 !important;
+			}
+			
+			> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > #Footer {
+				margin-top: 30px;
+				text-align: center;
+			}
+		}
 	}
+}
 
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail{
-		padding: 25px;
-		text-align: left;
-		background-color:rgba(255,255,255,0.1);
+
+@media only screen and (max-width:650px) {
+	#Main {
+		> #Banner {
+			> #StripeBG {
+				top: -110px;
+			}
+
+			> #Tagline {
+				top: 195px;
+				left: 25px;
+				width: 32.285714em;
+			}
+
+			> #Tagline > .ui.header {
+				font-size: 2.8em;
+			}
+		}
+
+		> #WhatWeDo {
+			> .ui.container > .ui.grid > .row {
+				@include flex-direction(column);
+			}
+
+			> .ui.container > .ui.grid > .row > .column {
+				width:100% !important;
+			}
+
+			> .ui.container > .ui.grid > .row > #Mission {
+				margin-bottom: 2.5em;
+			}
+		}
+
+		> #Partners {
+			> .ui.container > .ui.grid > .row > .column:nth-child(1){
+				width: 37.5%!important;
+			}
+		}
+
+
+
+		> #GetInTouch {
+			> #ContactDetails > .ui.grid > .row {
+				@include flex-direction(column);
+			}
+
+			> #ContactDetails > .ui.grid > .row > .column{
+				width:100% !important;
+			}
+
+			> #ContactDetails > .ui.grid > .row > .column > #SendMail {
+				margin-bottom: 20px;
+			}
+
+			> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > #Footer {
+				position:static;
+			}
+		}
 	}
+}
 
 
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.input {
-		margin-bottom: 13px;
-	}
+@media only screen and (max-width:500px) {
+	#Main {
+		> #Banner {
+			> #StripeBG {
+				top: -85px;
+			}
 
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic {
-		border: 2px solid #fff;
-		color: #fff !important;
-		box-shadow:none;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:hover {
-		background-color:transparent !important;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails {
-		text-align:left;
-		color:$dark-primary-font-color;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .ui.header {
-		text-transform:uppercase;
-		margin-bottom:0;
-		color:inherit;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .text {
-		font-size: 1.2em;
-		font-style: italic;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details {
-		@include flexbox();
-		@include align-items(center);
-		margin-bottom: 22px;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details > .icon {
-		font-size: 2em;
-		height:initial;
-		margin-right:10px;
-	}
-
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .details > .text {
-		font-size:1.2em;
-	}
-	
-	> #GetInTouch > #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > #Footer {
-		text-align: right;
-		position: relative;
-		top: 20px;
+			> #Tagline {
+				padding-left: 20px;
+				position: relative;
+				left: initial;
+				width: 100%;
+			}
+		}
 	}
 }
