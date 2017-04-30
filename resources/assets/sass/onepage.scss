@@ -73,8 +73,8 @@
 			color:#000;
 		}
 
-		> .ui.container > #Mission {
-			margin-bottom: 40px;
+		> .ui.container > #MissionVision {
+			margin:0;
 		}
 
 		> .ui.container > #MissionVision > .row > #Mission > .text,
@@ -102,6 +102,10 @@
 			margin-bottom: 2.86em;
 		}
 
+		> .ui.container > #Category {
+			margin:0;
+		}
+
 		> .ui.container > #Category > .row > .column > .text {
 			font-size: 1.28em;
 		}
@@ -115,6 +119,10 @@
 	> #Partners {
 		> .ui.container > .ui.header {
 			color:#353535;
+		}
+
+		> .ui.container > .ui.grid{
+			margin:0;
 		}
 
 		> .ui.container > .ui.grid > .row > .column {
@@ -146,6 +154,10 @@
 
 		> #ContactDetails {
 			background-color:$secondary-color;
+		}
+
+		> #ContactDetails > .ui.grid {
+			margin:0;
 		}
 
 		> #ContactDetails > .ui.grid > .row > .column > #SendMail{
@@ -350,7 +362,7 @@
 	#Main {
 		> #Banner {
 			> #StripeBG {
-				top: -110px;
+				top: -90px;
 			}
 
 			> #Tagline {
@@ -360,7 +372,7 @@
 			}
 
 			> #Tagline > .ui.header {
-				font-size: 2.8em;
+				font-size: 2.5em;
 			}
 		}
 
@@ -409,6 +421,11 @@
 
 @media only screen and (max-width:500px) {
 	#Main {
+		> .ui.container.fluid.section {
+			> .ui.container {
+				font-size: 0.65em;
+			}
+		}
 		> #Banner {
 			> #StripeBG {
 				top: -85px;
@@ -420,6 +437,71 @@
 				left: initial;
 				width: 100%;
 			}
+
+			> #Tagline > .ui.header {
+				font-size: 2.3em;
+				padding-right: 55px;
+			}
+		}
+
+		> #Partners {
+			> .ui.container > .ui.grid > .row > .column:nth-child(1){
+				width: 50%!important;
+			}
 		}
 	}
 }
+
+
+@media only screen and (max-width:450px) {
+	#Main {
+		> #Header {
+			> .right.menu{
+				display:none;
+			}
+		} 
+	}
+}
+
+
+@media only screen and (max-width:450px) {
+	#Main {
+		> #Banner {
+			> #StripeBG {
+				top: -85px;
+			}
+
+			> #Tagline {
+				padding-left: 20px;
+				position: relative;
+				left: initial;
+				width: 100%;
+			}
+
+			> #Tagline > .ui.header {
+				font-size: 2em;
+				padding:initial;
+			}
+		}
+	}
+}
+
+
+
+//Height
+
+@media only screen and (max-height:450px) {
+	#Main {
+		> #Banner {
+			> #StripeBG {
+				
+			}
+
+			> #Tagline {
+				top: 150px;
+			}
+		}
+	}
+}
+
+//Height and Width
