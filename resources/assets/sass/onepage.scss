@@ -310,6 +310,7 @@
 		
 		> #Banner {
 			background-color:$primary-color;
+			height: 65vh;
 			> #StripeBG {
 				display:none;
 			}
@@ -319,7 +320,7 @@
 				@include align-items(center);
 				width:100%;
 				position: static;
-				height:100vh;
+				height:100%;
 				padding:0 16px;
 				text-align:center;
 			}
