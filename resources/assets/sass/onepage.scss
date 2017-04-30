@@ -309,12 +309,19 @@
 		}
 		
 		> #Banner {
+			background-color:$primary-color;
 			> #StripeBG {
-				top: -130px;
+				display:none;
 			}
 
 			> #Tagline {
-				left: 45px;
+				@include flexbox();
+				@include align-items(center);
+				width:100%;
+				position: static;
+				height:100vh;
+				padding:0 16px;
+				text-align:center;
 			}
 		}
 
@@ -361,16 +368,6 @@
 @media only screen and (max-width:650px) {
 	#Main {
 		> #Banner {
-			> #StripeBG {
-				top: -90px;
-			}
-
-			> #Tagline {
-				top: 195px;
-				left: 25px;
-				width: 32.285714em;
-			}
-
 			> #Tagline > .ui.header {
 				font-size: 2.5em;
 			}
@@ -427,20 +424,8 @@
 			}
 		}
 		> #Banner {
-			> #StripeBG {
-				top: -85px;
-			}
-
-			> #Tagline {
-				padding-left: 20px;
-				position: relative;
-				left: initial;
-				width: 100%;
-			}
-
 			> #Tagline > .ui.header {
 				font-size: 2.3em;
-				padding-right: 55px;
 			}
 		}
 
@@ -452,7 +437,6 @@
 	}
 }
 
-
 @media only screen and (max-width:450px) {
 	#Main {
 		> #Header {
@@ -462,46 +446,3 @@
 		} 
 	}
 }
-
-
-@media only screen and (max-width:450px) {
-	#Main {
-		> #Banner {
-			> #StripeBG {
-				top: -85px;
-			}
-
-			> #Tagline {
-				padding-left: 20px;
-				position: relative;
-				left: initial;
-				width: 100%;
-			}
-
-			> #Tagline > .ui.header {
-				font-size: 2em;
-				padding:initial;
-			}
-		}
-	}
-}
-
-
-
-//Height
-
-@media only screen and (max-height:450px) {
-	#Main {
-		> #Banner {
-			> #StripeBG {
-				
-			}
-
-			> #Tagline {
-				top: 150px;
-			}
-		}
-	}
-}
-
-//Height and Width
