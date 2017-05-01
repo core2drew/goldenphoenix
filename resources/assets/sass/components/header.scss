@@ -55,7 +55,9 @@
 		box-shadow:none;
 	}
 
-	> .right.menu > #ContactUs:hover {
+	> .right.menu > #ContactUs:hover,
+	> .right.menu > #ContactUs:active, 
+	> .right.menu > #ContactUs:focus {
 		background-color:transparent !important;
 	}
 }
