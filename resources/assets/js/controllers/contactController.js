@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 var app = angular.module('GoldenPhoenixApp');
 
 app.controller('ContactController', function($scope,$http,$timeout){
