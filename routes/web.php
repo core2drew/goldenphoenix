@@ -15,11 +15,4 @@ Route::get('/', function () {
     return view('onepage.index',$params);
 });
 
-Route::get('/mail/inquires',function(){
-	return "Working!";
-});
-
-
-Route::get('/test', function () {
-   return "Test";
-});
+Route::get('/mail/inquires','MailController@sendInquiry');
