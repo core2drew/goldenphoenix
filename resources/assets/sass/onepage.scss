@@ -365,6 +365,10 @@
 			> .ui.fluid.container {
 				margin:0 !important;
 			}
+
+			> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > .ui.grid > .row > .column > #SendMail > .fields > .field:nth-child(n + 1){
+				margin-bottom: 10px;
+			}
 			
 			> #ContactDetails > .ui.grid > .row > .column > #ContactUsDetails > #Footer {
 				margin-top: 30px;
