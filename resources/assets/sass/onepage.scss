@@ -177,7 +177,7 @@
 		}
 
 		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:active {
-			background-color:$button-color-success;
+			background-color:$button-color-success !important;
 			border: 2px solid transparent;
 		}
 
