@@ -176,6 +176,11 @@
 			box-shadow:none;
 		}
 
+		> #ContactdEtails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:active {
+			background-color:$button-color-success;
+			border: 2px solid transparent;
+		}
+
 		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:hover {
 			background-color:transparent !important;
 		}
