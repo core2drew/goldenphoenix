@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('onepage.index',$params);
+    return view('onepage.index');
 });
 
 Route::get('/mail/inquires','MailController@sendInquiry');
