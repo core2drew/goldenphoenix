@@ -181,6 +181,10 @@
 			border: 2px solid transparent;
 		}
 
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:active:hover {
+			background-color:$button-color-success !important;
+		}
+
 		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:hover {
 			background-color:transparent !important;
 		}
