@@ -176,7 +176,8 @@
 			box-shadow:none;
 		}
 
-		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:active {
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:active,
+		> #ContactDetails > .ui.grid > .row > .column > #SendMail > .ui.button.basic:focus {
 			background-color:$button-color-success !important;
 			border: 2px solid transparent;
 		}
