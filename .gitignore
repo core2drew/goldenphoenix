@@ -8,6 +8,7 @@
 Homestead.json
 Homestead.yaml
 npm-debug.log
+.env
 public/vendors
 public/css/
 public/js/
