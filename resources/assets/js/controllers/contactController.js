@@ -14,7 +14,7 @@ app.controller('ContactController', function($scope,$http,$timeout){
             inquirer = ctrl.inquirer
             $("#SendMail > .ui.dimmer").addClass('active');
 
-            $http.get("/mail/inquires",{
+            $http.get("mail/inquires",{
                 params: {
                     fullname: inquirer.fullname,
                     email: inquirer.email,
