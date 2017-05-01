@@ -14,6 +14,6 @@ mix
    .sass('resources/assets/sass/main.scss', 'public/css')
    .sass('resources/assets/sass/underconstruction.scss','public/css')
    .sass('resources/assets/sass/onepage.scss','public/css')
-   .js('resources/assets/js/main.js', 'public/js/bundle.js')
-   .js('resources/assets/js/controllers/underController.js','public/js/controllers')
+   .js('resources/assets/js/goldenApp.js','public/js')
+   .js('resources/assets/js/controllers/contactController.js','public/js/controllers')
    .version();

@@ -15,3 +15,7 @@
 	@include('onepage.partners')
 	@include('onepage.get_in_touch')
 @endsection
+
+@push('scripts')
+	<script type="text/javascript" src="{{ mix('js/controllers/contactController.js') }}"></script>
+@endpush

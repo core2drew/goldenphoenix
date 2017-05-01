@@ -15,3 +15,5 @@ Route::get('/', function () {
 	$params['name'] = 'Drew';
     return view('onepage.index',$params);
 });
+
+Route::get('/mail/inquires','MailController@sendInquiry');

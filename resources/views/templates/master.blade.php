@@ -13,7 +13,7 @@
 			@yield("body")
 		</div>
 	</div>
-	<script type="text/javascript" src="{{ mix('js/bundle.js') }}"></script>
+	<script type="text/javascript" src="{{ mix('js/goldenApp.js') }}"></script>
 	@stack('scripts')
 </body>
 </html>

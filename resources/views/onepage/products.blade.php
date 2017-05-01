@@ -2,7 +2,7 @@
 	<div class="ui container">
 		<h1 class="ui header">Products</h1>
 		<p class="text">
-			The success the food market requires detailed knowledge of each producing country,
+			The success in the food market requires detailed knowledge of each producing country,
 			from feeding program, farming technology to fishing details. We keen to this steps
 			to ensure the taste, quality and grade that we can offer.
 		</p>
