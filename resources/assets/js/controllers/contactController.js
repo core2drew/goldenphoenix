@@ -14,7 +14,7 @@ app.controller('ContactController', function($scope,$http,$timeout){
             inquirer = ctrl.inquirer
             $("#SendMail > .ui.dimmer").addClass('active');
 
-            $http.get("mail/inquires",{
+            $http.get("/mail/inquires",{
                 params: {
                     fullname: inquirer.fullname,
                     email: inquirer.email,
@@ -37,6 +37,7 @@ app.controller('ContactController', function($scope,$http,$timeout){
                     ctrl.inquirer[prop] = "";
                 }
                 ctrl.contactSubmitted = false;
+                console.log(response);
                 
             }, function (response) {
                 ctrl.contactSubmitted = false;
@@ -44,6 +45,7 @@ app.controller('ContactController', function($scope,$http,$timeout){
                 $timeout(function () {
                     $("#SendMail > .ui.dimmer").removeClass('active');
                 }, 5000);
+                console.log(response);
             });
         }
     }
