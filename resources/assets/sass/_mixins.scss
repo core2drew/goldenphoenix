@@ -107,6 +107,13 @@
 	-webkit-transform:$translate;
 }
 
+@mixin transform-origin($origin) {
+	transform-origin: $origin;
+	-moz-transform:$origin;
+	-ms-transform-origin:$origin;
+    -webkit-transform-origin: $origin;
+}
+
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
   #{$property}: -webkit-calc(#{$expression});
